@@ -17,7 +17,8 @@ import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 
 # Set up the Spotify API client
-scope = "user-library-read playlist-modify-private"
+scope = "user-library-read playlist-modify-private" 
+
 sp = spotipy.Spotify(auth_manager=SpotifyOAuth(scope=scope))
 
 In this example, scope is a string that represents the permissions that your app requires to access the user's Spotify account. You can find a list of available scopes in the Spotify API documentation.
